@@ -36,6 +36,7 @@ export default async function handler(req, res) {
                     'Content-Type': 'application/json',
                 },
                 data: JSON.stringify(bodyData),
+                timeout: 30000, // Set a 30-second timeout (adjust as needed)
             }
         );
 
